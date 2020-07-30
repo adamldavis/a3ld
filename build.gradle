@@ -1,0 +1,72 @@
+
+/** -------------------------> Build works using Gradle 5.4.1+ and Java 8 */
+plugins {
+    id "org.groocss.groocss-gradle-plugin" version "1.0-RC1-groovy2.4"
+    id 'org.jbake.site' version '5.0.0'
+    id "java"
+    id "groovy"
+}
+def cssDir = "src/assets/css/"
+
+groocss {
+    charset = 'UTF-8'
+    prettyPrint = true
+    convertUnderline = true
+    processors = []
+    variables = [buildDir: project.buildDir]
+}
+groocssfiles {
+    allfiles {
+        inFile = file('src/main/groovy/')
+        outFile = file("$cssDir")
+    }
+}
+
+ext {
+    groocssVer = "1.0"
+}
+configurations {
+    sources
+}
+repositories {
+    mavenLocal()
+    jcenter()
+}
+dependencies {
+    compile "org.groocss:groocss:$groocssVer"
+    sources "org.groocss:groocss:$groocssVer:sources"
+}
+sourceSets {
+    main {
+        groovy {
+            srcDir(file("sources"))
+        }
+    }
+}
+jbake {
+    srcDirName = 'src/'
+    destDirName = '.'
+    version = '2.6.4'
+    groovyTemplatesVersion = '2.5.5'
+    clearCache = true
+}
+
+task copySite(type: Copy) {
+    from 'build/'
+    into './'
+    exclude '**/*.bak'
+}
+
+task site(dependsOn: ['convertCss', 'bake', 'copySite'], description: 'Builds the site') doLast {
+    println 'done'
+}
+
+task beforeCss doLast {
+    file(cssDir).mkdirs()
+	println 'Processing groocss'
+}
+tasks['convertCss'].dependsOn beforeCss
+
+wrapper {
+    gradleVersion = '6.2.2'
+}

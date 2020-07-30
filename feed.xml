@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JBake</title>
+    <link>https://a3ld.com</link>
+    <atom:link href="https://a3ld.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>JBake Bootstrap Template</description>
+    <language>en-gb</language>
+    <pubDate>Wed, 29 Jul 2020 22:44:43 -0400</pubDate>
+    <lastBuildDate>Wed, 29 Jul 2020 22:44:43 -0400</lastBuildDate>
+
+    <item>
+      <title>First Contact</title>
+      <link>https://a3ld.com/blog/2020/post1.html</link>
+      <pubDate>Tue, 25 Aug 2020 00:00:00 -0400</pubDate>
+      <guid isPermaLink="false">blog/2020/post1.html</guid>
+      	<description>
+	&lt;p&gt;Hello! Welcome to my A3LD. I&apos;m Adam, and I created this site.&lt;/p&gt;
+&lt;p&gt;I&apos;m not sure what this site will become but for now it&apos;s a playground for anything&lt;br /&gt;
+and everything I can think up (and even some things that you think up).&lt;/p&gt;
+
+	</description>
+    </item>
+
+  </channel> 
+</rss>
