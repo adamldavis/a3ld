@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>2mail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/asciidoctor.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+
+      <link href="css/style.css" rel="stylesheet">
+      <style>
+          button { padding: 5px 1em; transition: all 0.15s; border: 0; }
+          button:hover { background: #333; color: #ced; box-shadow: 5px 5px 5px 4px rgba(0,0,0, 0.5);  }
+          #new_mail { display: flex; flex-flow: column; }
+          .highlight { background: #dfff65c7; transition: all 0.15s; padding: 0 5px; }
+          .highlight:hover { box-shadow: 5px 5px 5px 4px rgba(0,0,0, 0.5);  }
+      </style>
+
+    <!-- Le fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+  </head>
+  <body onload="prettyPrint(); _2mail.load()">
+    <div id="wrap">
+
+        <div class="container">
+
+            <div class="page-header">
+                <h1>2mail</h1>
+
+                <em>Better than email &trade;</em>
+            </div>
+
+            <div class="highlight" id="flash" onclick="this.innerHTML=''"></div>
+
+            <article id="inbox" class="mail">
+                <ul>
+                    <li><a href="#" onclick="_2mail.showMail('2020/06/22 From: Frank')">Hi there!</a></li>
+                    <li><a href="#" onclick="_2mail.showMail('2020/05/15 From: USA Bank')">[Bank] Your new statement is available</a></li>
+                    <li><a href="#" onclick="_2mail.showMail('2020/05/02 From: Tom')">Frank's birthday party</a></li>
+                </ul>
+                <button class="send" onclick="_2mail.newMail()">Send</button>
+            </article>
+
+            <article id="new_mail" style="display:none">
+
+                <input type="hidden" id="id" placeholder="ID" />
+                <input type="text" id="to" placeholder="To" />
+                <textarea id="text" placeholder="Message" style="height: 10em;"></textarea>
+                <select id="ttl" aria-label="Time to live">
+                    <option value="1">1 day</option>
+                    <option value="7">7 days</option>
+                    <option value="30">30 days</option>
+                </select>
+                <div>
+                    <button class="send" onclick="_2mail.send()">Send</button>
+                    <button class="cancel" onclick="_2mail.cancel()">Cancel</button>
+                </div>
+            </article>
+
+            <article id="mail" style="display:none" class="mail">
+                <div>
+                    <button class="cancel" onclick="_2mail.cancel()">Inbox</button>
+                </div>
+                <label for="mail_date">Date:</label><div id="mail_date"></div>
+                <label for="mail_from">From:</label><div id="mail_from"></div>
+                <div id="mail_text"></div>
+
+                <div>
+                    <button class="reply" onclick="_2mail.reply()">Reply</button>
+                    <button class="cancel" onclick="_2mail.cancel()">Cancel</button>
+                </div>
+            </article>
+
+        </div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+
+          <a href="index.html">A<sup>3</sup>LD</a>
+
+          Created by <a href="https://www.adamldavis.com">Adam L. Davis</a>.
+
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prettify.js"></script>
+    <script src="js/2mail.js"></script>
+  </body>
+</html>

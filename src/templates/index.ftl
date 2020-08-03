@@ -16,7 +16,7 @@
         Over the years I've gained a lot of experience in various programming languages, software development practices, systems, and design principles
         - constantly looking to improve and learn.
         <p>
-        Take a look around and see what you can get from this site. If you have any questions don't hesitate to email me.
+        Take a look around and see what you can get from this site. If you have any questions don't hesitate to contact info @ this site.
         <p>
         Thanks,
         <br />
@@ -27,11 +27,7 @@
     <article class="projects">
         <h2>Projects</h2>
 
-        <p><a href="https://bitbucket.org/adamldavis/dollar-lang/wiki/Home">Dollar-lang</a>: An implementation of Tuples and Mabye for Java</p>
-        <p><a href="https://github.com/adamldavis/z">Zeta-code</a>: Experimental IDE visualizing code using a ZUI, and breaking files apart into methods/functions</p>
-        <p><a href=https://github.com/adamldavis/humblecode">Humblecode</a>: Spring/Webflux/Mongo</p>
-        <p><a href="https://www.groocss.org/">GrooCSS</a>: A Groovy-based DSL for CSS generation</p>
-        <p><a href="https://github.com/adamldavis/graphql-java-immutables">graphql-java-immutables</a>: Generator for Immutable Java classes from GraphQL Schema</p>
+        <p><a href="2mail.html">2mail</a>: Like email but better. Everything is temporary.</p>
 
     </article>
 

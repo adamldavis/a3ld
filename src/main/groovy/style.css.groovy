@@ -63,7 +63,7 @@ sg '#disqus,#notes,#posts footer', {
 }
 
 _.post ^ h3 | _.post ^ p | _.post ^ _.caption | _.post ^ _.description | _.post ^ blockquote |
-_.post ^ ul | _.post ^ ol | _.chat ^ ul | _.response {
+_.post ^ ul | _.post ^ ol | _.mail ^ ul | _.response {
     extend '#disqus,#notes,#posts footer'
 }
 
@@ -250,11 +250,11 @@ sg '.navigation .permalink-nav-previous', {
 		POSTS
 		********************/
 		
-_.text ^h3 ^a | _.chat ^h3 ^a | _.answer ^h3 ^a {
+_.text ^h3 ^a | _.mail ^h3 ^a | _.answer ^h3 ^a {
   textDecoration 'none'
 }
 		
-_.text^ img | _.photo^ img | _.link^ img | _.quote^ img | _.chat^ img {
+_.text^ img | _.photo^ img | _.link^ img | _.quote^ img | _.mail^ img {
   maxWidth '100%'
   position 'relative'
   margin '0 auto 30px auto'
@@ -296,22 +296,22 @@ sg '.quote h3:before', {
   filter 'alpha(opacity=25)'
 }
 		
-_.chat ^ ul {
+_.mail ^ ul {
   margin '0 auto'
   padding 0
   listStyle 'none'
 }
 		
-_.chat ^ ul ^ li {
+_.mail ^ ul ^ li {
   margin 0
   padding '11px 0 11px 0'
 }
 		
-_.chat ^ ul ^li % firstChild {
+_.mail ^ ul ^li % firstChild {
   paddingTop 0
 }
 		
-_.chat ^ ul ^ li ^ _.label {
+_.mail ^ ul ^ li ^ _.label {
   fontWeight 700
   marginRight '3px'
 }
@@ -845,7 +845,7 @@ media 'only screen and (max-width: 480px)', {
       marginBottom '17px !important'
     }
 
-    _.chat ^ ul ^ li {
+    _.mail ^ ul ^ li {
       margin 0
       padding '7px 0 7px 0'
     }

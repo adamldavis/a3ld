@@ -52,7 +52,7 @@ div.blueBox:hover {
 div.page-title {
     max-width: 650px;
 }
-#disqus,#notes,#posts footer,.post h3,.post p,.post .caption,.post .description,.post blockquote,.post ul,.post ol,.chat ul,.response {
+#disqus,#notes,#posts footer,.post h3,.post p,.post .caption,.post .description,.post blockquote,.post ul,.post ol,.mail ul,.response {
     max-width: 650px;
 }
 .tmblr-iframe {
@@ -197,10 +197,10 @@ header {
 .navigation .permalink-nav-previous {
     float: right;
 }
-.text h3 a,.chat h3 a,.answer h3 a {
+.text h3 a,.mail h3 a,.answer h3 a {
     text-decoration: none;
 }
-.text img,.photo img,.link img,.quote img,.chat img {
+.text img,.photo img,.link img,.quote img,.mail img {
     max-width: 100%;
     position: relative;
     margin: 0 auto 30px auto;
@@ -235,19 +235,19 @@ header {
     filter: alpha(opacity=25);
     -ms-filter: alpha(opacity=25);
 }
-.chat ul {
+.mail ul {
     margin: 0 auto;
     padding: 0;
     list-style: none;
 }
-.chat ul li {
+.mail ul li {
     margin: 0;
     padding: 11px 0 11px 0;
 }
-.chat ul li:first-child {
+.mail ul li:first-child {
     padding-top: 0;
 }
-.chat ul li .label {
+.mail ul li .label {
     font-weight: 700;
     margin-right: 3px;
 }
@@ -879,7 +879,7 @@ blockquote {
 p {
     margin-bottom: 17px !important;
 }
-.chat ul li {
+.mail ul li {
     margin: 0;
     padding: 7px 0 7px 0;
 }

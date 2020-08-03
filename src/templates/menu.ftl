@@ -15,16 +15,11 @@
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>index.html">Home</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>about.html">About</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>archive.html">Blog</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.feed_file}">Subscribe</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
               
-        <li><a href="https://bitbucket.org/adamldavis/dollar-lang/wiki/Home">Dollar-lang</a></li>
-        <li><a href="https://github.com/adamldavis/z">Zeta-code</a></li>
-        <li><a href=https://github.com/adamldavis/humblecode">Humblecode</a></li>
-        <li><a href="https://www.groocss.org/">GrooCSS</a></li>
-        <li><a href="https://github.com/adamldavis/graphql-java-immutables">graphql-java-immutables</a></li>
+        <li><a href="2mail.html">2mail</a></li>
               </ul>
             </li>
           </ul>
