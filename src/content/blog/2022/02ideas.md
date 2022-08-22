@@ -2,6 +2,7 @@ title=Ideas for Free
 date=2022-08-21
 type=post
 tags=blog
+author=Adam
 status=published
 ~~~~~~
 
@@ -22,13 +23,12 @@ Here are some ideas:
 Today there are already multiple successful businesses, that meet these 
 definitions of "ideas" but a simple idea is not even close to being enough.
 
-- Job Posting website: Indeed, Monster...
-- Online book store: Amazon, Leanpub, ...
-- Site for posting and voting on posts: Reddit, ...
-- Online video courses: Udemy, Skillshare, ...
-- Travel booking website: Hotels, Booking, Expedia, ...
-- Questions and answers: Quora, Stackoverflow, ...
+- Job Posting website: _Indeed, Monster..._
+- Online book store: _Amazon, Leanpub, ..._
+- Site for posting and voting on posts: _Reddit, ..._
+- Online video courses: _Udemy, Skillshare, ..._
+- Travel booking website: _Hotels, Booking, Expedia, ..._
+- Questions and answers: _Quora, Stackoverflow, ..._
 
 What ideas do you have? 
 
---Adam

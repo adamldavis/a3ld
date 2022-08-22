@@ -2,6 +2,7 @@ title=First Contact
 date=2022-08-20
 type=post
 tags=blog
+author=Adam
 status=published
 ~~~~~~
 
@@ -22,5 +23,3 @@ it takes on a different aspect.
 
 I'm not sure what this site will become but for now it's a playground for anything
 and everything I can think up (and even some things that you think up).
-
---Adam
