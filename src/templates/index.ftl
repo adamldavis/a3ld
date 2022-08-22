@@ -7,21 +7,7 @@
 	</div>
 
 	<article class="note">
-	    <p>
-        Hi there!
-        <br />
-        <p>
-        I've been a software developer for over fifteen years and have always had a passion for software.
-        <p>
-        Over the years I've gained a lot of experience in various programming languages, software development practices, systems, and design principles
-        - constantly looking to improve and learn.
-        <p>
-        Take a look around and see what you can get from this site. If you have any questions don't hesitate to contact info @ this site.
-        <p>
-        Thanks,
-        <br />
-        <p>
-        Adam L. Davis
+        A3LD
     </article>
 
     <article class="projects">
