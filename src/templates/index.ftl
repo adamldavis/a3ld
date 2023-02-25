@@ -7,13 +7,15 @@
 	</div>
 
 	<article class="note">
-        A3LD
+        <div><b class="a">A</b><b class="3">3</b><b class="L">L</b><b class="D">D</b></div>
     </article>
 
     <article class="projects">
         <h2>Projects</h2>
 
-        <p><a href="2mail.html">2mail</a>: Like email but better. Everything is temporary.</p>
+        <div class="blueBox"><a href="http://www.groocss.org/">GrooCSS</a>: Programmable CSS</div>
+
+        <div class="blueBox"><a href="2mail.html">2mail</a>: Simple messaging (demo).</div>
 
     </article>
 

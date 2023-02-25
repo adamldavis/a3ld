@@ -15,6 +15,7 @@
     <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/base.css" rel="stylesheet">
     <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/prettify.css" rel="stylesheet">
     <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/main.css" rel="stylesheet">
+    <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/style.css" rel="stylesheet">
 
     <!-- Le fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&family=Ubuntu&display=swap" rel="stylesheet">

@@ -7,8 +7,8 @@ GENERAL
 sg '.page-header', {
     fontSize '1.2em'
     paddingTop '4em'
-    background 'linear-gradient(45deg, black, transparent)'
-    color white
+    //background 'linear-gradient(45deg, black, transparent)'
+    //color white
 }
 
 def boxedStyles = { foreColor, timing ->
@@ -17,16 +17,17 @@ def boxedStyles = { foreColor, timing ->
     color shade(foreColor, 0.1)
     background tint(foreColor, 0.9)
     boxShadow "10px 5px 5px ${shade(foreColor)}"
+    borderRadius '6px'
   }
 }
-div.salmon %hover {
+_.salmon %hover {
   add boxedStyles(salmon, 1.s)
-  scale(1.3, 1.3)
+  textIndent 2.px
   zIndex 99
 }
-div.blueBox %hover {
+_.blueBox %hover {
   add boxedStyles(blue, 1.s)
-  scale(1.2, 1.2)
+  textIndent 2.px
   zIndex 98
 }
 
@@ -138,7 +139,7 @@ h6 {
 }
 		
 a {
-  textDecoration 'underline'
+  textDecoration 'none'
 }
 		
 p {
@@ -873,20 +874,17 @@ media 'only screen and (max-width: 480px)', {
       marginBottom '50px !important'
     }
 }
-		
-		
-body {
-  background backColor
-  color textColor
-}
+
 
 sg '.post-date a', {
   color '#abe'
 }
 
 sg 'p:hover,li:hover', {
+  transition '1s'
+  color black
   background '#fcf8e3'
-    boxShadow '0 0 5px rgba(0,0,0,0.5)'
+  boxShadow '0 0 5px rgba(0,0,0,0.5)'
 }
 pre {
   padding '1em'
