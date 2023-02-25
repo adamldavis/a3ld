@@ -2,7 +2,6 @@
 .page-header {
     font-size: 1.2em;
     padding-top: 4em;
-    color: White;
 }
 .salmon:hover {
     transition: all 1s ease;
@@ -606,6 +605,11 @@ header {
     color: #abe;
 }
 p:hover,li:hover {
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    color: Black;
     background: #fcf8e3;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);

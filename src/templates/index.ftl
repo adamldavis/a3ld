@@ -17,6 +17,9 @@
 
         <div class="blueBox"><a href="2mail.html">2mail</a>: Simple messaging (demo).</div>
 
+        <div class="blueBox"><a href="https://github.com/adamldavis/graphql-java-immutables">GraphQL Java Immutables</a>:
+            Generator for Immutable Java classes from GraphQL Schema.</div>
+
     </article>
 
 <#include "footer.ftl">
